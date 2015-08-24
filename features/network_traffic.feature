@@ -5,6 +5,6 @@ Feature: Network traffic with all resources with Poltergeist
 
 
 Scenario: View home page and list all loaded resources
-  Given I am on the BBC home page
+  Given I am on the Tinyowl home page
   When I called network traffic using Poltergeist
   Then I should see list of all resources loaded after a web page document has started to load
