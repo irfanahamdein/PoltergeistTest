@@ -1,9 +1,8 @@
-Given(/^I am on the BBC home page$/) do
+Given(/^I am on the Tinyowl home page$/) do
   visit "http://tinyowl.com"
 end
 
 When(/^I called network traffic using Poltergeist$/) do
-
 end
 
 

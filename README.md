@@ -1,14 +1,14 @@
-#Poltergeist 
+#Poltergeist
 
-Poltergeist is a headess capybara driver based on PhantomJS. This project is a demonstration of Poltergiest driver in your project. 
+Poltergeist is a headess capybara driver based on PhantomJS. This project is a demonstration of Poltergiest driver in your project.
 
 
 
-##Pre-requisite 
+##Pre-requisite
 
-in order to use Poltergeist, You must have PhatomJs installed. It's very easy to install. 
+in order to use Poltergeist, You must have PhatomJs installed. It's very easy to install.
 
-On Mac : Use HomeBrew. Please note MacPort installtion is not recommended 
+On Mac : Use HomeBrew. Please note MacPort installtion is not recommended
 
               $ brew install phantomjs
 
@@ -18,33 +18,33 @@ On Linux : Download PhantomJS from the official site and add binary to your PATH
 
 And create symlink  phantomjs/bin to your /usr/local/bin and /usr/bin
 
-On Ubuntu, you can use basic phantomjs package like this 
+On Ubuntu, you can use basic phantomjs package like this
 
                 $ sudo apt-get install phantomjs
               
               
 
-#Usage 
+#Usage
 
 Note: You need to have Ruby 1.9.3 and Capybara 2.1.0 for the latest Poltergeist version. Please make sure you have Ruby 1.9.3 and Capybara 2.1.0 for this Demo.
 
-### Clone the repository 
+### Clone the repository
 
 
-        $ git clone https://github.com/Shashikant86/Poltergeist-Demo.git
+        $ git clone https://github.com/irfanah/PoltergeistTest.git
         $ cd Poltergeist-Demo
         
         
-You may widh to do bundle update before running cucumber 
+You may widh to do bundle update before running cucumber
 
-        $ bundle update 
+        $ bundle update
 
-Now run cucumber to see all the scenario passes using Poltergiest. 
+Now run cucumber to see all the scenario passes using Poltergiest.
 
         $ bundle exec cucumber
 
 
-Now , if you got Ruby installed, you may need to check that Ruby version is compabtible with Poltergeist and Capybara version. 
+Now , if you got Ruby installed, you may need to check that Ruby version is compabtible with Poltergeist and Capybara version.
 If you got error then you can download Poltergeist gem by specifying Git repository. In order to do that you may need to update gemfile
 
          gem 'poltergeist', :git => 'git://github.com/jonleighton/poltergeist.git'
@@ -52,8 +52,8 @@ If you got error then you can download Poltergeist gem by specifying Git reposit
 
 ### Playing with Poltergiest
 
-There are many things you could do with poltergeist like resizing window, taking screenshot, capturing network traffic, response headers, cookie 
-There are few option in the sinatra_step_definition file. You can comment out and see those in action 
+There are many things you could do with poltergeist like resizing window, taking screenshot, capturing network traffic, response headers, cookie
+There are few option in the sinatra_step_definition file. You can comment out and see those in action
 
          #page.driver.resize(400,600)
          #page.save_screenshot("/Users/user/Desktop/test.pdf")
@@ -62,7 +62,7 @@ There are few option in the sinatra_step_definition file. You can comment out an
          #puts page.driver.cookies
          #puts page.response_headers.to_a
          
-### Customising Poltergeist Options 
+### Customising Poltergeist Options
 
 You can customise Poltergeist with multiple options like JS error, debug, timeout and many more as mentioned on Poltergiest documentation
 Take a look at features/Support/env.rb file how options are configured. you can play with it by changing values or adding more options in the array e.g :debug => true
