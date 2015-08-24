@@ -1,5 +1,5 @@
 Given(/^I am on the BBC home page$/) do
-  visit "http://www.bbc.co.uk/programmes/a-z"
+  visit "http://tinyowl.com"
 end
 
 When(/^I called network traffic using Poltergeist$/) do
